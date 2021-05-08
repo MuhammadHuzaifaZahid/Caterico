@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOrder"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/holo_red_light"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create Order"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            ></TextView>
+
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="@android:color/holo_red_light"
+            android:layout_gravity="left"
+            android:paddingLeft="6dp"></Button>
+
+        <Button
+            android:id="@+id/signout"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+            android:paddingLeft="6dp"
+            app:backgroundTint="@android:color/holo_red_light"></Button>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:layout_marginBottom="25dp"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Order Id"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+
+        <EditText
+            android:id="@+id/order_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Order Title"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+
+        <EditText
+            android:id="@+id/due_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Due Date"
+            android:inputType="date"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+
+        <EditText
+            android:id="@+id/due_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Due Time"
+            android:inputType="time"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+
+        <EditText
+            android:id="@+id/order_desc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Order Description"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+        <EditText
+            android:id="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Budget"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="3dp"
+            android:weightSum="20"
+            >
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:layout_marginTop="10dp"
+                android:hint="Order Status"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textColorHint="@android:color/white">
+            </TextView>
+            <TextView
+                android:id="@+id/new_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:layout_marginTop="10dp"
+                android:hint="-Status-"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAlignment="textEnd"
+                android:textColorHint="@android:color/white">
+            </TextView>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textColorHint="@android:color/white"
+                android:layout_alignBottom="@+id/status"
+                android:layout_toRightOf="@+id/status" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/assign_hr"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Assign HR"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/assign_inventory"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Assign Inventory"
+            android:textColor="@android:color/white"></Button>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

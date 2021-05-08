@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:weightSum="8"
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_weight="3"
+        android:id="@+id/order_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:text="Order Id"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/order_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:text="Order Title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"></ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_margin="5dp"
+        android:background="#FFF"/>
+
+
+
+</LinearLayout>

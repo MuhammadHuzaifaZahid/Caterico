@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abdurrehman.caterico">
+
+    <application
+        android:allowBackup="true"
+        android:banner="@android:color/transparent"
+        android:icon="@drawable/logo2"
+        android:label="Caterico"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AssignedHR" />
+        <activity android:name=".AssignedInventory" />
+        <activity android:name=".Inventory" />
+        <activity android:name=".Inventory2" />
+        <activity android:name=".EditOrder" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".AddHr" />
+        <activity android:name=".AssignHr" />
+        <activity android:name=".CreateOrder" />
+        <activity android:name=".Orders" />
+        <activity android:name=".AdminPage" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Signin" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".ViewHr"/>
+    </application>
+
+</manifest>

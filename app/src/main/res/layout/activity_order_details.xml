@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/holo_red_light"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order Details"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            ></TextView>
+
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="@android:color/holo_red_light"
+            android:layout_gravity="left"
+            android:paddingLeft="6dp"></Button>
+
+        <Button
+            android:id="@+id/signout"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+            android:paddingLeft="6dp"
+            app:backgroundTint="@android:color/holo_red_light"></Button>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Order Id"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Order Title"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/due_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Due Date"
+            android:inputType="date"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/due_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Due Time"
+            android:inputType="time"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/order_desc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Order Description"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Order Status"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Budget"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/edit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="right"
+            android:drawableStart="@drawable/ic_baseline_edit_24"
+            android:paddingLeft="9dp"
+            android:background="@drawable/bg_circle"></Button>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/delete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="right"
+            android:drawableStart="@drawable/ic_baseline_delete_24"
+            android:paddingLeft="8dp"
+            android:background="@drawable/bg_circle"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+        <Button
+            android:id="@+id/view_hr"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="50"
+            android:layout_gravity="left"
+            android:text="Assigned HR"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_red_light"></Button>
+        <Button
+            android:id="@+id/view_inv"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="5"
+            android:layout_gravity="left"
+            android:text="Assigned Inventory"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_red_light"></Button>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

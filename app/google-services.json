@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "218684948982",
+    "firebase_url": "https://caterico-35737-default-rtdb.firebaseio.com",
+    "project_id": "caterico-35737",
+    "storage_bucket": "caterico-35737.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218684948982:android:b5c0e3c0b0ba28979187d7",
+        "android_client_info": {
+          "package_name": "com.abdurrehman.caterico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218684948982-dj60tffu6m5g70c831g6duu51o1mu2bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD84swiEtMSoMJmx_6sAQYRhDtLEjFjgjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218684948982-dj60tffu6m5g70c831g6duu51o1mu2bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218684948982:android:aa97578b6c1695a69187d7",
+        "android_client_info": {
+          "package_name": "com.sharjeelhussain.smd_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218684948982-dj60tffu6m5g70c831g6duu51o1mu2bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD84swiEtMSoMJmx_6sAQYRhDtLEjFjgjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218684948982-dj60tffu6m5g70c831g6duu51o1mu2bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

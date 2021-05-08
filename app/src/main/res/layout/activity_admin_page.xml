@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/main"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/holo_red_light"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Admin Page"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            ></TextView>
+
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="@android:color/holo_red_light"
+            android:layout_gravity="left"
+            android:visibility="invisible"
+            android:paddingLeft="6dp"></Button>
+
+        <Button
+            android:id="@+id/signout"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+            android:paddingLeft="6dp"
+            app:backgroundTint="@android:color/holo_red_light"></Button>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="85dp"
+            android:text="My profile"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"></Button>
+
+        <Button
+        android:id="@+id/orders"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="85dp"
+        android:text="Orders"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"></Button>
+
+        <Button
+            android:id="@+id/inventory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="85dp"
+            android:text="Inventory"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"></Button>
+
+        <Button
+            android:id="@+id/add_hr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="85dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Human Resource"
+            android:textColor="@android:color/white"></Button>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
