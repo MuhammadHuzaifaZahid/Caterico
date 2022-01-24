@@ -4,7 +4,7 @@ tracking of resources
 # Technologies Used
 * Android
 * Java
-* Firebase Database
+* Firebase Database (Online database to save application data)
 # Features
 * Signup, Signin & Signout
 * Update & View Profile
